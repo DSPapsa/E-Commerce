@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Register.css'
-
+import {Link} from 'react-router-dom'
 
 
 function Register() {
@@ -28,7 +28,7 @@ function Register() {
                     <h5>Password</h5>
                     <input type='password' value={password} onChange={e => setPassword(e.target.value)} />
 
-                    <button type='submit' className='register__signInButton'>Sign Up</button>
+                    <Link to='/login'><button type='submit'  className='register_signupButton'>Sign-Up</button></Link>
                 </form>
                 <h3>Other Sign-up Options</h3>
 
@@ -42,8 +42,8 @@ function Register() {
                 </div>
 
                 <p>
-                    By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale. Please
-                    see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
+                Digikull's group project E-Commerce website . Please
+             see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
                 </p>
 
 
